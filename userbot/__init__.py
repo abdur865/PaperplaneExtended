@@ -41,7 +41,7 @@ if version_info[0] < 3 or version_info[1] < 6:
 # Check if the config was edited by using the already used variable.
 # Basically, its the 'virginity check' for the config file ;)
 CONFIG_CHECK = os.environ.get(
-    "___________PLOX_______REMOVE_____THIS_____LINE__________", None)
+    "", None)
 
 if CONFIG_CHECK:
     LOGS.info(
@@ -50,11 +50,11 @@ if CONFIG_CHECK:
     quit(1)
 
 # Telegram App KEY and HASH
-API_KEY = os.environ.get("API_KEY", None)
-API_HASH = os.environ.get("API_HASH", None)
+API_KEY = os.environ.get("API_KEY", "1160484")
+API_HASH = os.environ.get("API_HASH", "4aff40113838146d57451597341d4d91")
 
 # Userbot Session String
-STRING_SESSION = os.environ.get("STRING_SESSION", None)
+STRING_SESSION = os.environ.get("STRING_SESSION", "1BVtsOHgBu2wKUYo_Rjcxbo_2T8f2o-iwon_8-s8ZOzHpFW5l16qPZXZ_njAgzjW5-_HtbQqhQgF6inx3i1DbKMXNFeA7LjS0Mf9xPwwIPqT5icAMo4wGohGGx8HRiZCCRsKx5sSrh3nKlHljSsk7d44PqNxDSAsyZ3czQb6R7kJH0fc2bYBZ2ffXSMyCkTa_kf3ZY5t3F5Sp_SGhqyQKItg4M1ToMbFtqsi0WfPW-LUn-eHYAdDt9k5r76VeY4eocA-3cRj_cJ7Vl1Q64y2FfqVgX5hBT2Pn-oPGHQ_scwASDgFPcdCXWVHwc_NRElPnut8BGnRpZ9an6OCq0_A6ynlbgtbMb00="
 
 # Logging channel/group ID configuration.
 BOTLOG_CHATID = int(os.environ.get("BOTLOG_CHATID", None))
